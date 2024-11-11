@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Minting Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Minting Board</h1>
+        <div id="status" class="status">Connecting to MetaMask...</div>
+        <div class="game-section">
+            <button id="joinGameButton" class="action-button" onclick="joinGame()">Join Game</button>
+            <input type="number" id="scoreInput" placeholder="Enter your score" class="input-field">
+            <button id="updateScoreButton" class="action-button" onclick="updateScore()">Update Score</button>
+        </div>
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
